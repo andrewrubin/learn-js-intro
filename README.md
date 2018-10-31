@@ -11,15 +11,15 @@
 - **API:** This is an acronym for “Application Programming Interface”. An API can refer to any methodology that has been created to assist in programming with some codebase. For example, FedEx has created their own API, which we can leverage to retrieve information about shipping rates, based on user location. 
 
 
-## Why Javascript?
-- Because static HTML is boring!
+## What is JavaScript used for?
+- Spice-up boring old HTML!
 - Add feedback and flare to user interactions
 - Animation
   - Keep users engaged
   - Enhance user interactions with animations and transitions.
 - Show/hide content based on conditional information. Examples:
   - If a user clicks a “login” button, then show a login modal window.
-  <!-- - If the user is on a touch device, show a "swipe to view additional images" call-to-action. Otherwise, show a "click to view more" CTA. -->
+  - If a user only needs one more item in their cart in order to receive free shipping, display an appropriate call-to-action.
 - Consume and manipulate data (examples):
   - A “to-do” list. Data must be stored and maintained somehow, when items are added and removed from the list.
   - Send and receive data from 3rd parties. Examples: dynamically pull in Tweets, shipping rates, or user information (My Nintendo).
@@ -28,6 +28,17 @@
 
 
 ## Part 1
+
+### Examples of JavaScript's usefulness
+- **A _to-do list_ component**
+  - Discuss the basic evolution of a component, from HTML to CSS to JS.
+  - Example 1.1 - static HTML: https://codepen.io/andyranged/pen/f7ce88815ce544cfa91b780abec90a93
+  - Example 1.2 - adding some CSS styling: https://codepen.io/andyranged/pen/657c499a997345d6c4756cfbb80c384c
+  - Example 1.3 - bringing the component to life with JavaScript: https://codepen.io/andyranged/pen/e43f7b694367ad8c89bb6093ba057fba
+  - Not only does this **Example 1.3** show how to bring interactivity to a component; it also illustrates how data is stored and retrieved based on user input. You can see the data being manipulated in the `console` here:
+
+
+## Part 2
 
 ### Some basics
 - Intro to the `console` object
@@ -74,7 +85,7 @@ Display a different message only *if* the user's name is Andrew.
 
 ----
 
-## Part 2
+## Part 3
 
 ### Data Structures
 - What is a data structure, and why would we need one?
