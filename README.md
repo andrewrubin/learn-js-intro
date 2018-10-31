@@ -1,17 +1,17 @@
 # WTC Lunch & Learn: Intro to JavaScript
 
-## What is Javascript
+## Part 1
+
+### What is Javascript
 - A programming language, primarily used in web browsers.
 -   Created in ’95 by this dude (insert silly Brandon Eich gif here), who was hired to do so, by the company that would become Mozilla (you may have heard of them).
 
-
-## A brief terminology primer
+### A brief terminology primer
 - **event:** something that occurs in the web-browser—such as a click, scroll, or hover.
 - **dynamic:** This refers to content on a web page which is not static or fixed. Something that is displayed programatically, as opposed to being “hard-coded” HTML.
 - **API:** This is an acronym for “Application Programming Interface”. An API can refer to any methodology that has been created to assist in programming with some codebase. For example, FedEx has created their own API, which we can leverage to retrieve information about shipping rates, based on user location. 
 
-
-## What is JavaScript used for?
+### What is JavaScript used for?
 - Spice-up boring old HTML!
 - Add feedback and flare to user interactions
 - Animation
@@ -26,16 +26,14 @@
 - Tracking your users' behaviour, in an effort to provide marketing/strategy insight.
 - And a whole lot more!
 
-
-## Part 1
-
 ### Examples of JavaScript's usefulness
 - **A _to-do list_ component**
   - Discuss the basic evolution of a component, from HTML to CSS to JS.
   - Example 1.1 - static HTML: https://codepen.io/andyranged/pen/f7ce88815ce544cfa91b780abec90a93
   - Example 1.2 - adding some CSS styling: https://codepen.io/andyranged/pen/657c499a997345d6c4756cfbb80c384c
-  - Example 1.3 - bringing the component to life with JavaScript: https://codepen.io/andyranged/pen/e43f7b694367ad8c89bb6093ba057fba
-  - Not only does this **Example 1.3** show how to bring interactivity to a component; it also illustrates how data is stored and retrieved based on user input. You can see the data being manipulated in the `console` here:
+  - Example 1.3 - bringing the component to life with JavaScript: https://codepen.io/andyranged/pen/a5778886dc0c35230e0e52f0ddf660bf
+  - Not only does this **Example 1.3** show how to bring interactivity to a component; it also illustrates how data is stored and retrieved based on user input. You can see the data being manipulated in the `console`.
+- 
 
 
 ## Part 2
@@ -84,8 +82,6 @@ Walk them through creating a short program which does the following things:
 Display a different message only *if* the user's name is Andrew.
 
 ----
-
-## Part 3
 
 ### Data Structures
 - What is a data structure, and why would we need one?
