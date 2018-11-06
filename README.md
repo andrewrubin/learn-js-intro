@@ -269,10 +269,14 @@ Create a program which does the following:
 **Part 2:**
 
 - In this same program, display a different message in the console, only *if* the user's name is Bowser.
+  - Hint: you can _reassign_ variables… do what you will with that information!
 
 **Part 3:**
 
-- In this same program, check if the user has entered the number `11` as their name.
+- In this same program, check if the user has entered the number `11`, or the word `"Eleven"`, as their name.
   - If this is the case, let's display a unique message for them—maybe something _Stranger Things_-related. 🤓
+  - There are multiple ways to do this. If you encounter an error, try "debugging" it by console-logging the user's name with the `typeof` operator discussed earlier.
+
+- Finally, for everybody else, display a generic message.
 
 ----
