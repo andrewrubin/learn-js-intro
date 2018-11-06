@@ -38,7 +38,6 @@
   - The following example illustrates a common scenario, in which a developer is given a massive chunk of data, and is tasked with "parsing" that data into something nice and readable.
   - **Example 2** - Working with large sets of data: https://codepen.io/andyranged/pen/24f51ec8e60c5e9a1914af30a0feef62
 
-
 ## Part 2: The Beef
 
 Any code snippets you see here are intended to be copied and pasted into your CodePen editor (in the JavaScript pane). Please edit the examples provided, and try to come up with your own variations on the examples where possible!
@@ -47,7 +46,7 @@ Any code snippets you see here are intended to be copied and pasted into your Co
 - Intro to the `console` object
   - Using `console.log()` to get feedback from our code.
   - (Note: this bullet point is intended to be _super basic_, and is just here for the purpose of seeing feedback from what we do. No need to explain what an object or a method is yet).
-    ```
+    ```js
     console.log('Hello world!');
     console.log('My name is Andrew.');
     ```
@@ -58,7 +57,7 @@ Any code snippets you see here are intended to be copied and pasted into your Co
     - Booleans are one of two values—either `true` or `false`.
   - Other data types you'll come across: `undefined`, `null`.
   - You can use the `typeof` operator to check the type of any value. Here, we'll use it to confirm that strings and numbers are indeed different data types:
-    ```
+    ```js
     console.log(typeof "5");  // -> outputs "string" to the console
     console.log(typeof 5);    // -> outputs "number" to the console
     ```
@@ -67,7 +66,7 @@ Any code snippets you see here are intended to be copied and pasted into your Co
   - Others: `%`, `**`, `++`, `--`
   - Note that the normal mathematical "order of operations" applies here: Parenthesis --> Exponents  --> Multiplication / Division --> Addition / Subtraction.
   - Here are some examples of basic arithmetic in JavaScript:
-    ```
+    ```js
     console.log(5 + 5);           // 10
     console.log(150 - 10)         // 140
     console.log(4 * 4)            // 16
@@ -75,7 +74,7 @@ Any code snippets you see here are intended to be copied and pasted into your Co
     ```
 - **Concatenation**
   - The addition operator (`+`), when used on a string, becomes the "concatenation" operator. This is used to "glue" strings onto one another.
-    ```
+    ```js
     console.log("Andrew" + "Rubin");
     // AndrewRubin
 
@@ -86,7 +85,7 @@ Any code snippets you see here are intended to be copied and pasted into your Co
     - When you write the expression `5 + "5"`, JavaScript detects that you're adding a string to a number. The string—being a string—will instead be concatenated onto the number. In this instance, you'll get the result `"55"`, rather than the expected "10".
     - If you were to ask JavaScript to evaluate `5 + 5 + "10"`, JS would add the two numbers, and then concatenate the string onto the end. So in this case, instead of spitting out "20", you'd get `"1010"` (the result of 5 + 5, then "10" contatenated onto it).
 
-- Comparison operators and booleans; `==`, `===`, `!=`, `!==`, `<`, `>`, `<=`, `=>`
+- Comparison operators and booleans: `==`, `===`, `!=`, `!==`, `<`, `>`, `<=`, `=>`
   - equal `==` compares **value**
   - strict equal `===` compares **value** _and_ **type**
   - not equal `!=` checks if values are _not_ the same
@@ -94,7 +93,7 @@ Any code snippets you see here are intended to be copied and pasted into your Co
   - greater than `>` and less than `<` compare the value of numbers.
   - greater than or equal to `>=` and less than or equal to `<=` compare the value of numbers.
   - All of the above will return boolean values (true or false).
-  ```
+  ```js
   console.log(20 == 20);      // true   (same value)
   console.log(20 == "20");    // true   (same value)
   console.log(20 === 20);     // true   (same value AND data type. Both are of type "number".)
@@ -108,19 +107,19 @@ Any code snippets you see here are intended to be copied and pasted into your Co
 
 ### Variables
 - **What is a variable?**
-  - A variable can be thought of as a _label_, to which you can assign values.
+  - A variable can be thought of as a label, to which you can _bind_ (assign) values.
 - **Why would you want to use a variable?**
   - Variables are part of the essence of any programming language. They allow you to store values—simple or complex—into a nice reference (or label) that you can pass around and reuse when you may need it.
 - **Variable Declaration and assignment**
   - Variables are declared with the `var` keyword.
     - (there are other ways to declare variables, but for the purposes of this lesson, you should only be concerned with `var`).
-    ```
+    ```js
     var name;
     var hairColor;
     ```
   - Variables have somewhat strict naming rules—they must not start with a number, they must not contain spaces, and so on. It is common practice to name variables using camelCase or underscores: `petName`, or `pet_name`.
   - Variables are _assigned_ using the assignment operator, which is a single equals `=` sign:
-    ```
+    ```js
     var name = "Andrew";
     var hairColor = "blond";
     var vision = 2020;
@@ -130,7 +129,7 @@ Any code snippets you see here are intended to be copied and pasted into your Co
 
 - **Using variables**
   - Here's an example in which we're concatenating some information together, pieces of which are stored in variables:
-    ```
+    ```js
     var name = "Gertrude";
     var message = "My name is " + name;
 
@@ -143,7 +142,7 @@ Any code snippets you see here are intended to be copied and pasted into your Co
     console.log(aboutMe);
     ```
   - In this next example, we will compare some variables:
-    ```
+    ```js
     var sisterAge = 24;
     var brotherAge = 17;
 
@@ -160,7 +159,7 @@ Any code snippets you see here are intended to be copied and pasted into your Co
 - If this, then that!
 - Conditional statements (often referred to as "if statements", or "control flow"), are necessary for writing **logic** into your JavaScript programs.
 - A basic `if` statement looks like this:
-  ```
+  ```js
   if (something is true) {
     then do something!
   }
@@ -168,13 +167,13 @@ Any code snippets you see here are intended to be copied and pasted into your Co
   - Although the above snippet contains invalid code, the structure is what's important here.
 - After the keyword `if`, between the two parenthesis, you'll input some kind of test or expression, which evaluates to either `true` or `false`. From here, JavaScript knows whether or not to run whatever code is between the curly brackets `{}`.
 - Now that we understand the _format_ of an `if` statement, here's a real example:
-  ```
+  ```js
   if (10 > 5) {
     console.log("Yes!");
   }
   ```
   - In the above example, the line of code `console.log("Yes!");` will run, because the test inside the parenthesis `()` evaluated to true.
-  ```
+  ```js
   if ("dog" == "cat") {
     console.log("You learn something new every day.");
   }
@@ -184,7 +183,7 @@ Any code snippets you see here are intended to be copied and pasted into your Co
 - **else, and else if**
   - What if you want something to happen if the condition is not met (i.e. the test is false)?
   - Introduce the `else` clause:
-    ```
+    ```js
     if ("dog" == "cat") {
 
       console.log("*world explodes*");
@@ -198,7 +197,7 @@ Any code snippets you see here are intended to be copied and pasted into your Co
   - Simply add the keyword `else` after the closing curly bracket of your statement, and open up a new pair of curly brackets for whatever code you want to run if the initial condition is _not_ met.
 - **else if**
   - If you want to get even more specific with controlling the flow of the user experience, you can add extra tests onto your if statement, using the keyword `else if`:
-    ```
+    ```js
     var questionsCorrect = 12;
     var totalQuestions = 19;
     var resultMessage = "You answered " + questionsCorrect + " out of " + totalQuestions + " questions correctly. ";
@@ -226,7 +225,7 @@ Any code snippets you see here are intended to be copied and pasted into your Co
     - "OR": `||` - one of the expressions in the condition must be true
     - "NOT": `!` - negates an expression.
   - These operators can be used inside conditional statements:
-    ```
+    ```js
     var luckyNumber = 12;
 
     if (luckyNumber > 1 && luckyNumber < 10) {
