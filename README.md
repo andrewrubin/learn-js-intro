@@ -254,20 +254,25 @@ Any code snippets you see here are intended to be copied and pasted into your Co
 
 **Part 1:**
 
-Creating a program which does the following things:
-- Prompt a user for their name, and store that value in a variable.
+Create a program which does the following:
+- Prompts a user for their name, and stores that value in a variable.
   - Tip: you can use the `prompt()` function to ask for user input.
   - You can then store that in a variable. For example:
     ```js
     var age = prompt('How old are you?');
     ```
-  - It may help to turn off CodePen's auto-update feature for this exercise. You'll see why. Settings > Behavior > Auto-Updating Preview.
+  - It may help to turn off CodePen's auto-update feature for this exercise. You'll see why. **Settings > Behavior > Auto-Updating Preview**.
   
 - Create a `message` variable which concatenates a message string onto the user's name.
 - Display the personalized greeting in the console.
 
 **Part 2:**
 
-Display a different message only *if* the user's name is Bowser.
+- In this same program, display a different message in the console, only *if* the user's name is Bowser.
+
+**Part 3:**
+
+- In this same program, check if the user has entered the number `11` as their name.
+  - If this is the case, let's display a unique message for them—maybe something _Stranger Things_-related. 🤓
 
 ----
