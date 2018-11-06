@@ -4,7 +4,7 @@
 
 ### What is Javascript
 - A programming language, primarily used in web browsers.
--   Created in ’95 by Brandon Eich, who was hired to do so, by the company that would become Mozilla (you may have heard of them).
+- Created in ’95 by Brandon Eich, who was hired to do so, by the company that would become Mozilla (you may have heard of them).
 
 ### A brief terminology primer
 - **event:** something that occurs in the web-browser—such as a click, scroll, or hover.
@@ -51,11 +51,12 @@ Any code snippets you see here are intended to be copied and pasted into your Co
     console.log('My name is Andrew.');
     ```
 - **Primitive data types**
-  - Most important for this lesson: `string`, `number`, `boolean`
-    - Strings are sequences of characters wrapped in quotes (single or double, just be consistent).
-    - Numbers are what they sound like - just _not_ wrapped in quotes. `"5"` is a string, while `5` is a number.
-    - Booleans are one of two values—either `true` or `false`.
-  - Other data types you'll come across: `undefined`, `null`.
+  - Most important for this lesson: **string**, **number**, and **boolean**
+    - **Strings** are sequences of characters wrapped in quotes (single or double, just be consistent).
+      - Escape character: `\` is used to "ignore" what would be a closing quote. Example: `'I heard Sarah\'s cat is larger than Jeff\'s dog'`. If we don't _escape_ the apostrophes, the first one would cause our string to end, which would in turn trigger utter CATastrophy.
+    - **Numbers** are what they sound like - just _not_ wrapped in quotes. `"5"` is a string, while `5` is a number.
+    - **Booleans** are one of two values—either `true` or `false`.
+  - Other data types you'll come across: **undefined**, **null**.
   - You can use the `typeof` operator to check the type of any value. Here, we'll use it to confirm that strings and numbers are indeed different data types:
     ```js
     console.log(typeof "5");  // -> outputs "string" to the console
@@ -85,14 +86,14 @@ Any code snippets you see here are intended to be copied and pasted into your Co
     - When you write the expression `5 + "5"`, JavaScript detects that you're adding a string to a number. The string—being a string—will instead be concatenated onto the number. In this instance, you'll get the result `"55"`, rather than the expected "10".
     - If you were to ask JavaScript to evaluate `5 + 5 + "10"`, JS would add the two numbers, and then concatenate the string onto the end. So in this case, instead of spitting out "20", you'd get `"1010"` (the result of 5 + 5, then "10" contatenated onto it).
 
-- Comparison operators and booleans: `==`, `===`, `!=`, `!==`, `<`, `>`, `<=`, `=>`
+- **Comparison operators and booleans** `==`, `===`, `!=`, `!==`, `<`, `>`, `<=`, `=>`
   - equal `==` compares **value**
   - strict equal `===` compares **value** _and_ **type**
   - not equal `!=` checks if values are _not_ the same
   - strict not equal `!==` checks if values and types are not the same.
   - greater than `>` and less than `<` compare the value of numbers.
   - greater than or equal to `>=` and less than or equal to `<=` compare the value of numbers.
-  - All of the above will return boolean values (true or false).
+  - All of the above (if used properly—to compare two items) will return boolean values (true or false).
   ```js
   console.log(20 == 20);      // true   (same value)
   console.log(20 == "20");    // true   (same value)
@@ -253,13 +254,18 @@ Any code snippets you see here are intended to be copied and pasted into your Co
 
 **Part 1:**
 
-Walk them through creating a short program which does the following things:
-- `prompt()` a user for their name, and store that value in a variable.
-- Create a `message` variable which concatenates a message string to the user's name.
-- Display the personalized greeting in the console (or even `alert()` it just for fun. FUN!)
+Creating a program which does the following things:
+- Prompt a user for their name, and store that value in a variable.
+  - Tip: you can use the `prompt()` function to ask for user input.
+  - You can then store that in a variable. For example:
+    ```js
+    var age = prompt('How old are you?');
+    ```
+- Create a `message` variable which concatenates a message string onto the user's name.
+- Display the personalized greeting in the console.
 
 **Part 2:**
 
-Display a different message only *if* the user's name is Andrew.
+Display a different message only *if* the user's name is Bowser.
 
 ----
