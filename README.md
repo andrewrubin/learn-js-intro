@@ -261,6 +261,8 @@ Creating a program which does the following things:
     ```js
     var age = prompt('How old are you?');
     ```
+  - It may help to turn off CodePen's auto-update feature for this exercise. You'll see why. Settings > Behavior > Auto-Updating Preview.
+  
 - Create a `message` variable which concatenates a message string onto the user's name.
 - Display the personalized greeting in the console.
 
