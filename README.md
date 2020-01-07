@@ -38,7 +38,7 @@
   - The following example illustrates a common scenario, in which a developer is given a massive chunk of data, and is tasked with "parsing" that data into something nice and readable.
   - **Example 2** - Working with large sets of data: https://codepen.io/andyranged/pen/24f51ec8e60c5e9a1914af30a0feef62
 
-## Part 2: The Beef
+## Part 2: Hands-on
 
 Any code snippets you see here are intended to be copied and pasted into your CodePen editor (in the JavaScript pane). Please edit the examples provided, and try to come up with your own variations on the examples where possible!
 
